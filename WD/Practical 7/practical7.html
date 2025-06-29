@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <style>
+        #slideshow {
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+
+        img.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+    <div id="slideshow">
+        <img src="image1.webp" class="active" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="Image3.jpg" alt="Image 3">
+    </div>
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll("#slideshow img");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i == index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 3000); // Auto-change every 3 seconds
+    </script>
+    </center>
+</body>
+
+</html>

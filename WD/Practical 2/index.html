@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+
+<body style="text-align: center;">
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <form action="submit.php" method="post">
+        <label for="name"><b>Name :</b></label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email"><b>Email :</b></label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="address">Address :</label>
+        <textarea id="address" name="address"></textarea><br><br>
+
+        <label>Gender :</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other<br><br>
+
+        <label>Subject :</label>
+        <input type="checkbox" name="subject" value="DSA">DSA
+        <input type="checkbox" name="subject" value="OS">OS
+        <input type="checkbox" name="subject" value="MPT">MPT
+        <input type="checkbox" name="subject" value="TOC">TOC<br><br>
+
+        <label for="country">Country :</label>
+        <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+            <option value="Norway">Norway</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>

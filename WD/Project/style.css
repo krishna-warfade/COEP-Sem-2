@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+top-cloud {
+    position: relative;
+    right: 300px;
+    top: 40px;
+}
+h1 {
+ color: #66bfbf;
+}
+h2 {
+    color: #66bfbf;
+}
+.title-text {
+    display: block;
+}
+.container-top {
+    padding-top: 100%;
+    position: relative;
+    background-color: #e4f9f5;
+    font-family:"Sacramento", cursive;
+}
+span {
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+---
+title: "612415196 Warfade Krishna Vijay's Assignment 1"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+Q1.Create a variable named car and assign value “BMW” in it.
+```{r}
+car <- "BMW"
+car
+```
+Q2.Create a variable named speed and assign value “120” in it.
+```{r}
+speed <- 120
+speed
+```
+Q3.Display z = x + y * x – y, where x = 20 and y = 10.
+```{r}
+x <- 20
+y <- 10
+z <- x + y * x - y
+```
+Q4.What is the data type of the variable “myVar”, where myVar <- 100.
+```{r}
+myVar <- 100
+class(myVar)
+```
+Q5.Which function is used to check the datatype of any variable?
+```{r}
+##class()
+```
+Q6.Create vectors of given prompt and also find it’s length.
+```{r}
+array1 <- c(-10:10)
+array2 <- rep(c(1), 20)
+array3 <- seq(5, 125, 5)
+length(array1)
+length(array2)
+length(array3)
+```

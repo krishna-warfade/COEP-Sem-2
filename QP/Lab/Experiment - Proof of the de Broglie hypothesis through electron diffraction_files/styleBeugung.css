@@ -1,0 +1,293 @@
+@charset "utf-8";
+@media screen and (max-width: 1020px) {
+	/* #menu is the original menu */
+	#NavigationLinks {
+		display:none;
+	}
+	#menuhead{
+		}
+	#homehead{
+		display:none;}
+	#wrapperMain{
+		width:100%;
+		margin-left:0;}
+	#feedback {
+		display:none;
+	}
+    #tabelleQuantitativ{
+        left:5px;
+        width: calc(100% - 5px);}
+}
+@media screen and (min-width: 1021px) {
+	/* #menu is the original menu */
+	#NavigationLinks {
+		display:block;
+	}
+	#wrapperMain{
+		width:calc(100% - 160px);
+		margin-left:148px;}
+	#menuhead{
+		display:none;}
+	#homehead{
+		}
+    #tabelleQuantitativ{
+        left:230px;
+        width: calc(100% - 230px);}
+}
+#wrapperMain{
+	position:absolute;
+	top:50px;
+	max-width:1400px;
+	text-align:center;
+	min-width:320px;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+/* Steuerungselemente in der Sidebar */	
+#sidebar {
+    font-size: 0.8em;
+    margin-left: 15px;
+    position: absolute;
+    text-align: left;
+    top: 20px;
+    width: 200px;
+    z-index: 1;
+}
+#steuerung {
+	position:absolute;
+	top: 0px;
+}
+#beschleu1 {
+    position: absolute;
+    top: 40px;
+	}
+#tipBeschleunigung1{
+    position: absolute;
+	top:33px;
+	left:-25px;}
+#spann1 {
+    position: absolute;
+    left: 5px;
+    top: 71px;
+    width: 123px;
+    padding: 0;
+    z-index: 5;
+}
+#ausgabeBeschleunigungsspannung1 {
+	position:absolute;
+	left: 153px;
+	top: 70px;
+	font-weight:bold;
+}
+#beschleu {
+	position:absolute;
+	top:-5px;
+	}
+#tipBeschleunigung{
+	position:absolute;
+	top:-7px;
+	left:-25px;}
+#spann {
+	position:absolute;
+	left:5px;
+	top: 30px;
+	width:123px;
+	padding:0;
+	z-index:5;
+}
+#ausgabeBeschleunigungsspannung {
+	position:absolute;
+	left: 153px;
+	top: 30px;
+	font-weight:bold;
+}
+#radius {
+	position:absolute;
+	top:70px;
+}
+#tipRadius {
+	position:absolute;
+	top:61px;
+	left:-25px;}
+#rad {
+	position:absolute;
+	left:5px;
+	top:100px;
+	width:123px;
+	padding:0;
+	z-index:5;
+}
+#ausgabeRadius {
+	position:absolute;
+	top: 99px;
+	left: 152px;
+	z-index:1;
+	font-weight:bold;
+}
+.TextLinks{
+    margin-bottom: 10px;
+    max-width: 1000px;
+    padding: 10px 10px 0 10px;
+    width: calc(100% - 20px);
+    text-align: justify;
+    line-height: 1.5;
+}
+#TextUnterUeberschrift {
+    display: inline-block;
+    margin-bottom: 10px;
+    max-width: 860px;
+    padding: 10px;
+    text-align: left;
+    width:calc(100% - 15px);
+}
+#ueberschrift{width:100%;max-width: 870px;margin-top:10px;}
+#wrapperEx{position:absolute; clear:both; max-width: 880px; width: calc(100% - 5px);}
+/*Versuchsaufbau */
+#RealbildBeugungsroehre{
+	width:48%;
+	max-width:500px;
+	min-width:300px;
+	margin-right:3%;
+	vertical-align:middle;
+}
+#SkizzeBeugungsroehre{
+	width:48%;
+	max-width:500px;
+	min-width:300px;
+	vertical-align:middle}
+/* Qualitatives Experiment */
+#AufgabeQualitativ {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 850px;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: left;
+    width: calc(100% - 15px);
+    background-color: #ccc;
+}
+#experimentQuali{
+	left: 230px;position: absolute;top: 10px;clear: both;width: calc(100% - 230px);max-width:700px;}
+#licht{
+	left: 230px;position: absolute;top: 10px;clear: both;width: calc(100% - 230px);max-width:700px;}
+#weiterQualitativ{position:absolute;left:230px;top:600px;width:calc(100% - 230px);max-width:700px}
+/* BRAGG_KRISTALL */
+#thetaWinkel{vertical-align:middle;width:40%;margin:0 10px;min-width:300px;}
+#debyeScherrer{vertical-align:middle;width:56%;min-width:300px;}
+#bildGeschwindigkeiten{
+    width: calc(100% - 20px);
+    margin: 10px;
+    max-width: 700px;}
+ /* de-Broglie-Wellenlänge	*/	
+table.deBroglieTable, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;    
+}
+ /* Aufbau Röhre*/
+#GeometrieBeugungsroehre{
+	width:calc(50% - 14px);
+    margin: 0 5px;
+    min-width: 400px;}
+#GeometrieBeugungsroehreFein{
+	width:calc(50% - 14px);
+    margin: 0 5px;
+    min-width: 400px;}
+
+ /* Experiment-Seite */
+#AufgabeExperiment {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 990px;
+    padding: 10px;
+	margin-left:10px;
+    text-align: left;
+    width:calc(100% - 30px);
+	background-color:#ccc
+}
+#experimentQuer{
+	left: 230px;position:absolute;top:10px;clear:both;width:calc(100% - 230px)}
+#gitterQuer{
+	left:230px;top:10px;position:absolute;width:calc(100% - 230px);z-index:1;}
+#kreisbahnMessen{left: 230px;width:calc(100% - 230px);position:absolute;top:10px;z-index:3;}
+#weiterdivQuantitativ{position:absolute;left:230px;top:725px;width:calc(100% - 230px)}
+#tabelleQuantitativ{
+    position: absolute;
+    top: 555px;
+}
+ /* Auswertung de Broglie */
+#Auswertung {
+	width:60%;
+	border-collapse:collapse;
+	text-align:center;
+	margin:15px auto;
+    min-width: 400px;}
+.tableAuswertung th{
+		border: 2px solid black;
+		line-height:30px;}
+.tableAuswertung td{
+		border: 2px solid black;
+        line-height:30px;}
+#Auswertung2 {
+	width:100%;
+	border-collapse:collapse;
+	text-align:center;
+	margin:15px auto;}
+.tableAuswertung2 th{
+		border: 2px solid black;
+        vertical-align: middle!important;
+}
+.tableAuswertung2 td{
+		border: 2px solid black;
+        vertical-align: middle!important;
+}
+ /* BEUGUNGSORDNUNG */
+#beugungMehrfachspalt{
+	width:calc(100% - 20px);
+	margin:10px;
+    max-width: 700px;}
+ /* Aufbau Graphitebenen */
+#GeometrieGraphit{
+	width:50%;
+	min-width:300px;}
+#wrapperAufgaben{margin-left: 20px;
+    max-width: 920px;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+#wrapperAufgabenH5P{
+    margin-left: 5px;
+    max-width: 920px;
+    margin-top: 10px;
+}
+#weiterLuecke{
+    float: right;
+    margin: 10px;
+    top:-50px}
+ol {
+    counter-reset: list;
+}
+ol > li {
+    list-style: none;
+    position: relative;padding:0.2em;left:-1.1em;
+}
+ol > li:before {
+    counter-increment: list;
+    content: counter(list, lower-alpha) ") ";
+    position: absolute;
+    left: -1.4em;	
+}
+.inputbeugung {width:60px}
